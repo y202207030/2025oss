@@ -1,14 +1,6 @@
 ﻿// calc.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 
-#include <iostream>
-#include "add.h"
-#include "dive.h"
-#include "mod.h"
-#include "mul.h"
-#include "sub.h"
-
-
 int main()
 {
 	int x = 0;
@@ -19,6 +11,12 @@ int main()
 	{
 		std::cout << "첫번째 수를 입력하세요 : ";
 		std::cin >> x;
+
+		if (-999 == x)
+		{
+			printf("프로그램을 종료합니다.\n");
+			break;
+		}
 		std::cout << "두번째 수를 입력하세요 : ";
 		std::cin >> y;
 
